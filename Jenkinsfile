@@ -29,8 +29,8 @@ pipeline{
             }
         }
         stage('run dockerfile'){
-          steps{
-               sh 'docker build -t myimg .'
+            steps{
+                sh 'docker build -t myimg .'
            }
          }
         stage('port expose'){
